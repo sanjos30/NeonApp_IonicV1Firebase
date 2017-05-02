@@ -1,0 +1,18 @@
+<ion-view title="My Orders" id="page9">
+  <ion-content padding="true" class="has-header">
+    <div id="myOrders-button-bar13" class="button-bar"></div>
+    <div id="myOrders-button-bar15" class="button-bar"></div>
+    <form id="myOrders-form11" class="list">
+      <label class="item item-input" id="myOrders-textarea12">
+        <span class="input-label">Text</span><textarea placeholder="">{{data}}</textarea></label>
+      <label class="item item-input" id="myOrders-textarea3">
+        <span class="input-label">Thanks you for ordering, {{data.name}}</span><textarea placeholder=""></textarea></label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 53px;"></div>
+    <ion-list id="myOrders-list6">
+      <ion-item id="myOrders-list-item7" ng-repeat="order in orders">{{order.amount}}
+        <span class="item-note">{{order.date}}</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

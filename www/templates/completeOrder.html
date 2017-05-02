@@ -1,0 +1,40 @@
+<ion-view title="Complete Order" id="page8">
+  <ion-content padding="true" class="has-header">
+    <div id="completeOrder-button-bar10" class="button-bar"></div>
+    <form id="completeOrder-form16" class="list">
+      <label class="item item-input" id="completeOrder-textarea13">
+        <span class="input-label">Text</span><textarea placeholder="">{{data}}</textarea></label>
+    </form>
+    <ol id="breadcrumbs">
+      <ul>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <span class="arrow">Step 3 of 3</span>
+      </ul>
+    </ol>
+    <form id="completeOrder-form9" class="list">
+      <ion-item class="item-divider" id="completeOrder-list-item-divider7"> Personal Details</ion-item>
+      <label class="item item-input" id="completeOrder-input18">
+        <span class="input-label">Full Name</span>
+        <input type="text" placeholder="" ng-model="data.name">
+      </label>
+      <label class="item item-input" id="completeOrder-input22">
+        <span class="input-label">Phone</span>
+        <input type="text" placeholder="" ng-model="data.phone">
+      </label>
+      <ion-item class="item-divider" id="completeOrder-list-item-divider8"> Delivery Details</ion-item>
+      <label class="item item-input" id="completeOrder-input19">
+        <span class="input-label">Pickup address</span>
+        <input type="text" placeholder="" ng-model="data.pickupaddress">
+      </label>
+      <ion-checkbox id="completeOrder-checkbox11" ng-model="useSameDropAddr">Drop at the same address</ion-checkbox>
+      <label class="item item-input" id="completeOrder-input20">
+        <span class="input-label">Dropoff address</span>
+        <input type="text" placeholder="leave blank if it's same" ng-model="droppoffaddress">
+      </label>
+      <div id="completeOrder-button-bar11" class="button-bar">
+        <button id="completeOrder-button41" ng-click="addOrder()" class="button button-positive  button-block">Confirm Order !</button>
+      </div>
+    </form>
+    <div id="completeOrder-button-bar12" class="button-bar"></div>
+  </ion-content>
+</ion-view>

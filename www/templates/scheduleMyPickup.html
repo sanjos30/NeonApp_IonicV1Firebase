@@ -1,0 +1,32 @@
+<ion-view title="Schedule My Pickup" id="page2">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-android-menu"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <form id="scheduleMyPickup-form10" class="list">
+      <label class="item item-input" id="scheduleMyPickup-textarea9">
+        <span class="input-label">Text</span><textarea placeholder="">{{data}}</textarea></label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 32px;"></div>
+    <ion-list id="scheduleMyPickup-list7">
+      <ion-item class="item-divider" id="scheduleMyPickup-list-item-divider5"> What are you ordering?</ion-item>
+      <ion-checkbox id="scheduleMyPickup-checkbox8" ng-model="data.OrderTypeDryClean">Dry Cleaning</ion-checkbox>
+      <ion-checkbox id="scheduleMyPickup-checkbox9" ng-model="data.OrderTypeWashPress">Wash &amp; Press</ion-checkbox>
+      <ion-checkbox id="scheduleMyPickup-checkbox10" ng-model="data.OrderTypeIroning">Ironing Only</ion-checkbox>
+    </ion-list>
+    <div id="scheduleMyPickup-button-bar2" class="button-bar"></div>
+    <form id="scheduleMyPickup-form4" class="list">
+      <ion-item class="item-divider" id="scheduleMyPickup-list-item-divider4"> Select Delivery time</ion-item>
+      <label class="item item-select" id="scheduleMyPickup-select3">
+        <span class="input-label">Pickup time</span>
+        <select ng-model="data.pickuptime" ng-options="pickuptime.id as pickuptime.label for pickuptime in pickuptimeslot"></select>
+      </label>
+      <label class="item item-select" id="scheduleMyPickup-select2">
+        <span class="input-label">Delivery time</span>
+        <select ng-model="data.deliverytime" ng-options="deliverytime.id as deliverytime.label for deliverytime in deliverytimeslot"></select>
+      </label>
+      <button id="scheduleMyPickup-button24" ng-click="addItems()" style="border-radius:6px 6px 6px 6px;" class="button button-positive  button-block">Next</button>
+    </form>
+    <div id="scheduleMyPickup-button-bar3" class="button-bar"></div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,38 @@
+<ion-view title="Add Items" id="page7">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-android-menu"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <div id="addItems-button-bar7" class="button-bar"></div>
+    <ol id="breadcrumbs">
+      <ul>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <span class="arrow">Step 2 of 3</span>
+      </ul>
+    </ol>
+    <form id="addItems-form8" class="list">
+      <label class="item item-input" id="addItems-textarea8">
+        <span class="input-label">Text</span><textarea placeholder="">{{data}}</textarea></label>
+      <button id="addItems-button37" ng-click="orderComplete()" class="button button-positive  button-block">Skip this step (We'll add it for you)</button>
+      <div class="spacer" style="width: 300px; height: 28px;"></div>
+      <ion-item class="range range-positive" id="addItems-range10">Shirt/T Shirts
+        <input type="range" value="0" min="0" max="15" step="1" name="Shirt" ng-model="data.shirts">
+      </ion-item>
+      <ion-item class="range range-positive" id="addItems-range11">Pants/Trousers
+        <input type="range" value="0" min="0" max="15" step="2" name="pants" ng-model="data.pants">
+      </ion-item>
+      <ion-item class="range range-positive" id="addItems-range12">Coats
+        <input type="range" value="0" min="0" max="15" step="3" name="coat" ng-model="data.coats">
+      </ion-item>
+      <ion-item class="range range-positive" id="addItems-range13">Sarees
+        <input type="range" value="0" min="0" max="15" step="4" name="saree" ng-model="data.sarees">
+      </ion-item>
+      <div id="addItems-button-bar8" class="button-bar">
+        <a href-inappbrowser="page6" id="addItems-button32" ng-onclick="gotoStep1()" class="button button-positive  button-block">Previous</a>
+        <button id="addItems-button33" class="button button-positive  button-block"></button>
+        <button id="addItems-button34" ng-click="orderComplete()" class="button button-positive  button-block">Next</button>
+      </div>
+    </form>
+    <div id="addItems-button-bar9" class="button-bar"></div>
+  </ion-content>
+</ion-view>
